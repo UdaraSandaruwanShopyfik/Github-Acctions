@@ -36,7 +36,8 @@ jobs:
           path: ./build
           
   test:
-    name: Test
+    name: test
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
